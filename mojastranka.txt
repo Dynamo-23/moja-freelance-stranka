@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profesionálny freelancer s odbornými skúsenosťami v oblasti [tvoj odbor].">
+    <meta name="author" content="Tvoje meno">
+    <meta name="keywords" content="freelancer, [tvoj odbor], web dizajn, grafika, písanie, programovanie">
+    <title>Freelancer - Tvoje Meno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1><a href="#">Tvoje Meno</a></h1>
+        </div>
+        <ul>
+            <li><a href="#about">O mne</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Profesionálny freelancer v oblasti [tvoj odbor]</h2>
+        <p>Pomôžem ti dosiahnuť úspech s mojou expertízou a skúsenosťami.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>O mne</h2>
+        <p>Ahoj! Som Tvoje Meno, odborník na [tvoj odbor] s [počet] rokov skúseností v oblasti [oblast]. Moje zručnosti zahŕňajú [vymenuj svoje zručnosti].</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Služby</h2>
+        <div class="service-card">
+            <h3>Web Dizajn</h3>
+            <p>Vytváram moderné a responzívne webové stránky, ktoré zaujmú každého návštevníka.</p>
+        </div>
+        <div class="service-card">
+            <h3>Grafický Dizajn</h3>
+            <p>Navrhnem ti logo, bannery a iné grafické materiály, ktoré posilnia tvoj brand.</p>
+        </div>
+        <div class="service-card">
+            <h3>Písanie a Copywriting</h3>
+            <p>Poskytnem kvalitný obsah, ktorý osloví tvoju cieľovú skupinu.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Projekt 1">
+            <p>Popis projektu 1</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Projekt 2">
+            <p>Popis projektu 2</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Projekt 3">
+            <p>Popis projektu 3</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form action="#" method="post">
+            <label for="name">Tvoje Meno:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Správa:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Odoslať</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tvoje Meno. Všetky práva vyhradené.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.service-card h3 {
+    font-size: 24px;
+}
+
+/* Portfolio */
+#portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+// Tento kód slúži na možnú interaktivitu, napríklad validáciu formulárov alebo animácie.
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Stránka načítaná.");
+});
